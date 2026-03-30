@@ -1,0 +1,394 @@
+/* EDIT ME: core typography and spacing are controlled in _data/theme_tokens.yml */
+
+body {
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(18, 70, 115, 0.07), transparent 26%),
+    radial-gradient(circle at 87% 24%, rgba(198, 55, 67, 0.08), transparent 22%),
+    linear-gradient(180deg, #f8fbff 0%, #fffdf8 100%);
+}
+
+.page__content {
+  max-width: var(--section-max);
+  margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+.masthead__menu-item a {
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+}
+
+.page__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.masthead__menu-item a {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+.lp-hero {
+  border-radius: 22px;
+  padding: 2.2rem;
+  margin: 0 0 var(--section-gap);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.lp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -24deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 16px,
+    transparent 16px,
+    transparent 36px
+  );
+  pointer-events: none;
+}
+
+.lp-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.lp-hero--blue {
+  background: linear-gradient(125deg, var(--theme-blue-background), var(--theme-blue-panel));
+  color: var(--theme-blue-text);
+  border-color: var(--theme-blue-border);
+}
+
+.lp-hero--red {
+  background: linear-gradient(135deg, var(--theme-red-background), var(--theme-red-panel));
+  color: var(--theme-red-text);
+  border-color: var(--theme-red-border);
+}
+
+.lp-hero--yellow {
+  background: linear-gradient(135deg, var(--theme-yellow-background), var(--theme-yellow-panel));
+  color: var(--theme-yellow-text);
+  border-color: var(--theme-yellow-border);
+}
+
+.lp-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 0.9rem;
+  font-family: var(--font-accent);
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.lp-kicker::before,
+.lp-kicker::after {
+  content: "";
+  width: 1.9rem;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.65;
+}
+
+.lp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.35rem;
+}
+
+.lp-button {
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  padding: 0.6rem 1.1rem;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.lp-button:hover,
+.lp-button:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.lp-button--ghost {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.track-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 var(--section-gap);
+}
+
+.track-card {
+  grid-column: span 12;
+  padding: 1.25rem;
+  border-radius: 18px;
+  border: 2px solid;
+  text-decoration: none;
+  display: block;
+  box-shadow: 0 14px 25px rgba(10, 22, 36, 0.14);
+  transition: transform 0.2s ease;
+}
+
+.track-card:hover,
+.track-card:focus {
+  transform: rotate(-0.7deg) translateY(-3px);
+}
+
+.track-card h3 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.track-card p {
+  margin: 0.55rem 0 0;
+  line-height: 1.4;
+}
+
+.track-card--blue {
+  background: linear-gradient(115deg, var(--theme-blue-panel), var(--theme-blue-background));
+  color: var(--theme-blue-text);
+  border-color: var(--theme-blue-border);
+}
+
+.track-card--red {
+  background: linear-gradient(120deg, var(--theme-red-panel), var(--theme-red-background));
+  color: var(--theme-red-text);
+  border-color: var(--theme-red-border);
+}
+
+.track-card--yellow {
+  background: linear-gradient(120deg, var(--theme-yellow-panel), var(--theme-yellow-background));
+  color: var(--theme-yellow-text);
+  border-color: var(--theme-yellow-border);
+}
+
+.poster-snapshot {
+  margin: 0 0 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(18, 29, 43, 0.2);
+  box-shadow: var(--card-shadow);
+}
+
+.poster-snapshot img {
+  width: 100%;
+  display: block;
+}
+
+.story-carousel {
+  margin: 0 0 var(--section-gap);
+  padding: 1.4rem;
+  border-radius: 22px;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.story-carousel.theme-blue {
+  background: linear-gradient(130deg, var(--theme-blue-background), var(--theme-blue-panel));
+  color: var(--theme-blue-text);
+  border-color: var(--theme-blue-border);
+}
+
+.story-carousel.theme-red {
+  background: linear-gradient(130deg, var(--theme-red-background), var(--theme-red-panel));
+  color: var(--theme-red-text);
+  border-color: var(--theme-red-border);
+}
+
+.story-carousel.theme-yellow {
+  background: linear-gradient(130deg, var(--theme-yellow-background), var(--theme-yellow-panel));
+  color: var(--theme-yellow-text);
+  border-color: var(--theme-yellow-border);
+}
+
+.story-carousel__header {
+  max-width: 50rem;
+}
+
+.story-carousel__eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-family: var(--font-accent);
+  font-size: 1.12rem;
+}
+
+.story-carousel__title {
+  margin: 0.4rem 0 0.3rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+}
+
+.story-carousel__intro {
+  margin: 0;
+  line-height: 1.48;
+}
+
+.story-carousel__controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin: 1rem 0 0.7rem;
+}
+
+.story-carousel__button {
+  appearance: none;
+  border: 2px solid currentColor;
+  background: transparent;
+  color: inherit;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  transition: background-color 0.15s ease;
+}
+
+.story-carousel__button:hover,
+.story-carousel__button:focus-visible {
+  background: rgba(255, 255, 255, 0.13);
+}
+
+.story-carousel__button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.story-carousel__viewport {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  padding: 0.3rem;
+}
+
+.story-carousel__track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--card-gap);
+}
+
+.story-card {
+  flex: 0 0 var(--card-size-md);
+  scroll-snap-align: start;
+}
+
+.story-card--sm {
+  flex-basis: var(--card-size-sm);
+}
+
+.story-card--md {
+  flex-basis: var(--card-size-md);
+}
+
+.story-card--lg {
+  flex-basis: var(--card-size-lg);
+}
+
+.story-card__link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.story-card__figure {
+  margin: 0;
+  transform: rotate(var(--card-rotate, var(--card-tilt-default)));
+  transition: transform 0.2s ease;
+}
+
+.story-card__link:hover .story-card__figure,
+.story-card__link:focus .story-card__figure {
+  transform: rotate(calc(var(--card-rotate, 0deg) * 0.45)) translateY(-3px);
+}
+
+.story-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--card-radius);
+  border: 2px dashed rgba(255, 255, 255, 0.6);
+  box-shadow: var(--card-shadow);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.story-card figcaption {
+  margin-top: 0.65rem;
+  display: grid;
+  gap: 0.3rem;
+}
+
+.story-card__caption {
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.story-card__tags {
+  opacity: 0.88;
+  font-size: 0.86rem;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  padding: 0.35rem 0.8rem;
+  text-decoration: none;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .lp-hero {
+    padding: 2.7rem;
+  }
+
+  .track-card {
+    grid-column: span 4;
+  }
+}
+
+@media (max-width: 640px) {
+  .lp-hero,
+  .story-carousel {
+    border-radius: 16px;
+  }
+
+  .story-carousel {
+    padding: 1rem;
+  }
+
+  .story-card {
+    flex-basis: min(82vw, var(--card-size-md));
+  }
+
+  .story-card--sm,
+  .story-card--lg {
+    flex-basis: min(82vw, var(--card-size-md));
+  }
+}

@@ -1,0 +1,19 @@
+name: "Lucas Piette"
+headline: "Portfolio of public-facing work across civic impact, editorial leadership, and broadcast creativity."
+intro: "This site is organized around a current focus area and a portfolio of prior college experiences."
+
+current_focus:
+  kicker: "Current Focus"
+  title: "Center for Public Safety & Justice"
+  summary: "I am building project-ready materials focused on communication, analysis, and creative storytelling in support of public safety and justice work."
+  note: "Role details are intentionally private for now and can be published later when appropriate."
+
+portfolio_intro: "Past and college work is grouped into two visual tracks so each project can be clicked, explored, and expanded over time."
+
+links:
+  - label: "Email"
+    url: "mailto:lucas@example.com"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/"
+  - label: "GitHub"
+    url: "https://github.com/lucaspiette"

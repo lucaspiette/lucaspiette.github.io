@@ -1,0 +1,38 @@
+title: "Center for Public Safety & Justice"
+intro: "A private-by-default carousel you can expand with real project details once they are public."
+items:
+  - image: "/assets/images/showcase/cpsj-focus-1.svg"
+    alt: "Placeholder card representing policy research preparation"
+    caption: "Policy research and briefing prep"
+    link: "/current-focus/"
+    rotation: -3
+    size: lg
+    order: 1
+    tags: ["Public Safety", "Research"]
+
+  - image: "/assets/images/showcase/cpsj-focus-2.svg"
+    alt: "Placeholder card representing stakeholder communication"
+    caption: "Stakeholder communication workflows"
+    link: "/current-focus/"
+    rotation: 2
+    size: md
+    order: 2
+    tags: ["Communications", "Process"]
+
+  - image: "/assets/images/showcase/cpsj-focus-3.svg"
+    alt: "Placeholder card representing storytelling and reporting"
+    caption: "Storytelling and reporting templates"
+    link: "/current-focus/"
+    rotation: -2
+    size: md
+    order: 3
+    tags: ["Narrative", "Reporting"]
+
+  - image: "/assets/images/showcase/cpsj-focus-2.svg"
+    alt: "Placeholder card for project planning"
+    caption: "Project planning and iteration"
+    link: "/current-focus/"
+    rotation: 4
+    size: sm
+    order: 4
+    tags: ["Planning", "Execution"]

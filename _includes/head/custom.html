@@ -1,0 +1,33 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/lp-custom.css' | relative_url }}">
+
+<style>
+  :root {
+    --font-display: {{ site.data.theme_tokens.fonts.display }};
+    --font-heading: {{ site.data.theme_tokens.fonts.heading }};
+    --font-body: {{ site.data.theme_tokens.fonts.body }};
+    --font-accent: {{ site.data.theme_tokens.fonts.accent }};
+
+    --section-max: {{ site.data.theme_tokens.spacing.section_max }};
+    --section-gap: {{ site.data.theme_tokens.spacing.section_gap }};
+    --card-gap: {{ site.data.theme_tokens.spacing.card_gap }};
+
+    --card-radius: {{ site.data.theme_tokens.cards.border_radius }};
+    --card-shadow: {{ site.data.theme_tokens.cards.shadow }};
+    --card-tilt-default: {{ site.data.theme_tokens.cards.tilt_default }};
+
+    --card-size-sm: {{ site.data.theme_tokens.cards.size.sm }};
+    --card-size-md: {{ site.data.theme_tokens.cards.size.md }};
+    --card-size-lg: {{ site.data.theme_tokens.cards.size.lg }};
+
+    {% for theme in site.data.theme_tokens.themes %}
+      --theme-{{ theme[0] }}-background: {{ theme[1].background }};
+      --theme-{{ theme[0] }}-panel: {{ theme[1].panel }};
+      --theme-{{ theme[0] }}-text: {{ theme[1].text }};
+      --theme-{{ theme[0] }}-accent: {{ theme[1].accent }};
+      --theme-{{ theme[0] }}-border: {{ theme[1].border }};
+    {% endfor %}
+  }
+</style>

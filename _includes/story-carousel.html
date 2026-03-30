@@ -1,0 +1,68 @@
+{% assign carousel = include.carousel %}
+{% if carousel %}
+  {% assign carousel_id = include.id | default: carousel.title | slugify %}
+  {% assign theme = include.theme | default: "blue" %}
+
+  <section class="story-carousel theme-{{ theme }}" data-carousel aria-label="{{ carousel.title }}">
+    <div class="story-carousel__header">
+      {% if include.kicker %}
+        <p class="story-carousel__eyebrow">{{ include.kicker }}</p>
+      {% endif %}
+      <h2 class="story-carousel__title">{{ carousel.title }}</h2>
+      {% if carousel.intro %}
+        <p class="story-carousel__intro">{{ carousel.intro }}</p>
+      {% endif %}
+    </div>
+
+    <div class="story-carousel__controls">
+      <button class="story-carousel__button" type="button" data-carousel-prev aria-label="Previous cards" aria-controls="{{ carousel_id }}">
+        <span aria-hidden="true">&#8592;</span>
+      </button>
+      <button class="story-carousel__button" type="button" data-carousel-next aria-label="Next cards" aria-controls="{{ carousel_id }}">
+        <span aria-hidden="true">&#8594;</span>
+      </button>
+    </div>
+
+    <div class="story-carousel__viewport" id="{{ carousel_id }}" data-carousel-viewport tabindex="0">
+      <ol class="story-carousel__track">
+        {% assign sorted_items = carousel.items | sort: "order" %}
+        {% for item in sorted_items %}
+          {% assign item_size = item.size | default: "md" %}
+          {% assign item_link = item.link | default: "#" %}
+          {% if item_link contains "://" or item_link contains "mailto:" %}
+            {% assign item_href = item_link %}
+            {% assign item_external = true %}
+          {% else %}
+            {% assign item_href = item_link | relative_url %}
+            {% assign item_external = false %}
+          {% endif %}
+
+          {% assign image_src = item.image | default: "/assets/images/showcase/cpsj-focus-1.svg" %}
+          {% if image_src contains "://" %}
+            {% assign image_href = image_src %}
+          {% else %}
+            {% assign image_href = image_src | relative_url %}
+          {% endif %}
+
+          <li class="story-card story-card--{{ item_size }}" style="--card-rotate: {{ item.rotation | default: 0 }}deg;">
+            <a class="story-card__link" href="{{ item_href }}" {% if item_external %}target="_blank" rel="noreferrer noopener"{% endif %}>
+              <figure class="story-card__figure">
+                <img src="{{ image_href }}" alt="{{ item.alt | default: item.caption }}" loading="lazy" decoding="async">
+                <figcaption>
+                  <span class="story-card__caption">{{ item.caption }}</span>
+                  {% if item.tags %}
+                    <span class="story-card__tags">
+                      {% for tag in item.tags %}
+                        {{ tag }}{% unless forloop.last %} · {% endunless %}
+                      {% endfor %}
+                    </span>
+                  {% endif %}
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+{% endif %}

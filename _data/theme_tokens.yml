@@ -1,0 +1,40 @@
+# EDIT ME: Global typography and color tokens for fast site-wide customization.
+fonts:
+  display: "'Fraunces', serif"
+  heading: "'Space Grotesk', sans-serif"
+  body: "'Work Sans', sans-serif"
+  accent: "'Bebas Neue', sans-serif"
+
+spacing:
+  section_max: "74rem"
+  section_gap: "3.5rem"
+  card_gap: "1rem"
+
+cards:
+  border_radius: "14px"
+  shadow: "0 12px 30px rgba(15, 23, 42, 0.22)"
+  tilt_default: "0deg"
+  size:
+    sm: "13rem"
+    md: "17rem"
+    lg: "22rem"
+
+themes:
+  blue:
+    background: "#0e2c4f"
+    panel: "#184577"
+    text: "#f4f8ff"
+    accent: "#6ec5ff"
+    border: "#97dfff"
+  red:
+    background: "#9e1f2d"
+    panel: "#bc2d3d"
+    text: "#fff2e9"
+    accent: "#ffd6a3"
+    border: "#ffe4c4"
+  yellow:
+    background: "#f0b50d"
+    panel: "#f7c73a"
+    text: "#1d1a12"
+    accent: "#103058"
+    border: "#5c4300"

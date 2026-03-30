@@ -1,0 +1,23 @@
+- id: current-focus
+  label: "Current Focus"
+  page: "/current-focus/"
+  theme: "blue"
+  timeframe: "Now"
+  visibility: "public"
+  description: "Center for Public Safety & Justice workstream with neutral placeholders."
+
+- id: editorial
+  label: "Editorial Leadership"
+  page: "/editorial/"
+  theme: "red"
+  timeframe: "College"
+  visibility: "public"
+  description: "Leadership and editorial storytelling projects from campus organizations."
+
+- id: broadcast
+  label: "Broadcast + Creative"
+  page: "/broadcast/"
+  theme: "yellow"
+  timeframe: "College"
+  visibility: "public"
+  description: "Student radio, live DJ sets, and multimedia creative production."

@@ -1,0 +1,7 @@
+main:
+  - title: "Current Focus"
+    url: /current-focus/
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "About"
+    url: /about/

@@ -1,0 +1,38 @@
+title: "Broadcast + Creative"
+intro: "Yellow track for student radio, live DJ work, and visual creative production."
+items:
+  - image: "/assets/images/showcase/broadcast-poster.png"
+    alt: "Student radio experience poster"
+    caption: "WXTJ experience snapshot"
+    link: "/broadcast/"
+    rotation: -1
+    size: lg
+    order: 1
+    tags: ["Radio", "Broadcast"]
+
+  - image: "/assets/images/showcase/broadcast-detail-1.svg"
+    alt: "Placeholder card for programming and scheduling"
+    caption: "Programming and scheduling workflow"
+    link: "/broadcast/"
+    rotation: 3
+    size: md
+    order: 2
+    tags: ["Scheduling", "Production"]
+
+  - image: "/assets/images/showcase/broadcast-detail-2.svg"
+    alt: "Placeholder card for live DJ sets"
+    caption: "Live DJ sets and event energy"
+    link: "/broadcast/"
+    rotation: -3
+    size: md
+    order: 3
+    tags: ["Live Performance", "Audio"]
+
+  - image: "/assets/images/showcase/broadcast-detail-3.svg"
+    alt: "Placeholder card for graphic and social content"
+    caption: "Graphics, social media, and visual storytelling"
+    link: "/broadcast/"
+    rotation: 2
+    size: sm
+    order: 4
+    tags: ["Design", "Social"]

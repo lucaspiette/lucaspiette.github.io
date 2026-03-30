@@ -1,0 +1,38 @@
+title: "Editorial Leadership"
+intro: "Red track showcasing leadership and editorial storytelling from college experiences."
+items:
+  - image: "/assets/images/showcase/editorial-poster.png"
+    alt: "Leadership and involvement poster"
+    caption: "Leadership and involvement overview"
+    link: "/editorial/"
+    rotation: -2
+    size: lg
+    order: 1
+    tags: ["Leadership", "Editorial"]
+
+  - image: "/assets/images/showcase/editorial-detail-1.svg"
+    alt: "Placeholder card for meeting facilitation"
+    caption: "Meeting facilitation and execution"
+    link: "/editorial/"
+    rotation: 3
+    size: md
+    order: 2
+    tags: ["Operations", "Facilitation"]
+
+  - image: "/assets/images/showcase/editorial-detail-2.svg"
+    alt: "Placeholder card for event programming"
+    caption: "Event programming and member onboarding"
+    link: "/editorial/"
+    rotation: -4
+    size: md
+    order: 3
+    tags: ["Programming", "Community"]
+
+  - image: "/assets/images/showcase/editorial-detail-3.svg"
+    alt: "Placeholder card for publication design"
+    caption: "Publication and handbook design"
+    link: "/editorial/"
+    rotation: 2
+    size: sm
+    order: 4
+    tags: ["Design", "Documentation"]
