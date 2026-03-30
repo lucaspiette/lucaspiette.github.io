@@ -14,7 +14,7 @@ items:
     alt: "Placeholder card for programming and scheduling"
     caption: "Programming and scheduling workflow"
     link: "/broadcast/"
-    rotation: 3
+    rotation: 2
     size: md
     order: 2
     tags: ["Scheduling", "Production"]
@@ -23,7 +23,7 @@ items:
     alt: "Placeholder card for live DJ sets"
     caption: "Live DJ sets and event energy"
     link: "/broadcast/"
-    rotation: -3
+    rotation: -2
     size: md
     order: 3
     tags: ["Live Performance", "Audio"]
