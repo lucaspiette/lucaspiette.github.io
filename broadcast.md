@@ -12,7 +12,7 @@ classes: wide
 </section>
 
 <figure class="poster-snapshot">
-  <img src="{{ '/assets/images/showcase/broadcast-detail-2.svg' | relative_url }}" alt="Broadcast and creative showcase placeholder">
+  <img src="{{ '/assets/images/showcase/broadcast-poster.png' | relative_url }}" alt="Broadcast and creative showcase poster">
 </figure>
 
 {% include story-carousel.html carousel=site.data.carousels.broadcast id="broadcast-carousel" theme="yellow" kicker="Yellow Story Cards" %}
