@@ -14,7 +14,7 @@ classes: wide
   <p>{{ profile.current_focus.note }}</p>
 </section>
 
-{% include story-carousel.html carousel=site.data.carousels.current_focus id="current-focus-carousel" theme="blue" kicker="Current Focus Cards" %}
+{% include story-carousel.html carousel=site.data.carousels.current_focus id="current-focus-carousel" theme="blue" kicker="CPSJ Timeline" %}
 
 <section>
   <h2>How to Update This Section Later</h2>

@@ -1,38 +1,28 @@
-title: "Editorial Leadership"
-intro: "Red track showcasing leadership and editorial storytelling from college experiences."
+title: "The Washington Literary Society and Debating Union Est. 1831"
+intro: "Quam Fluctus Diversi, Quam Mare Conjuncti"
 items:
   - image: "/assets/images/showcase/editorial-poster.png"
     alt: "Leadership and involvement poster"
-    caption: "Leadership and involvement overview"
+    caption: "Signing of the Roll"
     link: "/editorial/"
     rotation: -2
-    size: lg
+    size: md
     order: 1
-    tags: ["Leadership", "Editorial"]
 
   - image: "/assets/images/showcase/editorial-detail-1.svg"
     alt: "Placeholder card for meeting facilitation"
-    caption: "Meeting facilitation and execution"
+    caption: "Chairing Meetings"
     link: "/editorial/"
-    rotation: 3
+    rotation: 2
     size: md
     order: 2
-    tags: ["Operations", "Facilitation"]
 
   - image: "/assets/images/showcase/editorial-detail-2.svg"
     alt: "Placeholder card for event programming"
-    caption: "Event programming and member onboarding"
+    caption: "Inductions Night"
     link: "/editorial/"
-    rotation: -4
+    rotation: -2
     size: md
     order: 3
-    tags: ["Programming", "Community"]
 
-  - image: "/assets/images/showcase/editorial-detail-3.svg"
-    alt: "Placeholder card for publication design"
-    caption: "Publication and handbook design"
-    link: "/editorial/"
-    rotation: 2
-    size: sm
-    order: 4
-    tags: ["Design", "Documentation"]
+
