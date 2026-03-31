@@ -1,12 +1,12 @@
-title: "Center for Public Safety & Justice"
-intro: "A private-by-default carousel you can expand with real project details once they are public."
+title: "Center for Public Safety and Justice"
+intro: "Snapshot of the current work I do for UVA's new Center for Public Safety and Justice within the School of Continuing and Professional Studies"
 items:
   - image: "/assets/images/showcase/cpsj-focus-1.svg"
     alt: "Placeholder card representing policy research preparation"
     caption: "Policy research and briefing prep"
     link: "/current-focus/"
-    rotation: -3
-    size: lg
+    rotation: -2
+    size: md
     order: 1
     tags: ["Public Safety", "Research"]
 
@@ -32,7 +32,7 @@ items:
     alt: "Placeholder card for project planning"
     caption: "Project planning and iteration"
     link: "/current-focus/"
-    rotation: 4
-    size: sm
+    rotation: 2
+    size: md
     order: 4
     tags: ["Planning", "Execution"]
